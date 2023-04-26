@@ -9,10 +9,10 @@ chooseForLabelInputs.forEach((element, index, array) => {
             const isChecked = element.checked;
             
             if(isChecked){
-                isChecked && element.parentElement.classList.add("checked__for__who");
+                element.parentElement.classList.add("checked__for__who");
             }
             else{
-                isChecked || element.parentElement.classList.remove("checked__for__who");
+                element.parentElement.classList.remove("checked__for__who");
             }
         })
         
