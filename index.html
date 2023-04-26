@@ -10,35 +10,110 @@
     <title>ТестВУЗ</title>
 </head>
 <body>
-    <!-- <select name="" id="">
-        <option value="Moscow">Moscow</option>
-        <option value="NewYork">NewYork</option>
-    </select> -->
-   
-    <label for="choose-for__self" class="form__choose-for label checked__for__who">
-        Себе  
-        <input id="choose-for__self" type="radio" class="form_radio" name="forWho" checked>
-    </label>
-    <label for="choose-for__relative" class="form__choose-for label">
-        Родственнику    
-        <input id="choose-for__relative" type="radio" class="form_radio" name="forWho" >
-    </label>
-    <label for="choose-for__child" class="form__choose-for label">
-        Ребенку   
-        <input id="choose-for__child" type="radio" class="form_radio" name="forWho">
-    </label>
-    <label for="choose-for__spouses" class="form__choose-for label">
-        Супругу/супруге   
-        <input id="choose-for__spouses" type="radio" class="form_radio" name="forWho">
-    </label>
-    <label for="choose-for__colleague" class="form__choose-for label">
-        Коллеге   
-        <input id="choose-for__colleague" type="radio" class="form_radio" name="forWho">
-    </label>
-    <label for="choose-for__other" class="form__choose-for label">
-        Другое
-        <input id="choose-for__other" type="radio" class="form_radio" name="forWho">
-    </label>
+    
+    <!-- <div class="step1">
+        <label for="choose-for__self" class="form__choose-for label checked__for__who">
+            Себе  
+            <input id="choose-for__self" type="radio" class="form_radio" name="forWho" data-for="Себе" checked>
+        </label>
+        <label for="choose-for__relative" class="form__choose-for label">
+            Родственнику    
+            <input id="choose-for__relative" type="radio" class="form_radio" name="forWho" data-for="Родственнику" >
+        </label>
+        <label for="choose-for__child" class="form__choose-for label">
+            Ребенку   
+            <input id="choose-for__child" type="radio" class="form_radio" name="forWho" data-for="Ребенку">
+        </label>
+        <label for="choose-for__spouses" class="form__choose-for label">
+            Супругу/супруге   
+            <input id="choose-for__spouses" type="radio" class="form_radio" name="forWho" data-for="Супругу/супруге">
+        </label>
+        <label for="choose-for__colleague" class="form__choose-for label">
+            Коллеге   
+            <input id="choose-for__colleague" type="radio" class="form_radio" name="forWho" data-for="Коллеге">
+        </label>
+        <label for="choose-for__other" class="form__choose-for label">
+            Другое
+            <input id="choose-for__other" type="radio" class="form_radio" name="forWho" data-for="Другое">
+        </label>
+    </div> -->
+
+    <!-- <div class="step2">
+        <div class="custom-select">
+            <div class="custom-select__select-start">
+                <span class="custom-select__select-start__city">Город</span>
+                <p class="custom-select__select-start__city-name">Санкт-Петербург</p>
+            </div>
+            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="custom-select__svg">
+                <path d="M13.25 1.5L7 7.75L0.75 1.5" stroke="#9B9B9B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+        </div>
+        <div class="select-dropdown__wrapper">
+            <ul class="select-dropdown">
+                <li class="select-dropdown__item">
+                    <label for="choose-city__peterburg">
+                        <input type="radio" name="chooseCity" id="choose-city__peterburg"  data-value="Санкт-Петербург" checked>
+                        <span>Санкт-Петербург</span>
+                    </label>
+                </li>
+                <li class="select-dropdown__item line"></li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__moscow">
+                        <input type="radio" name="chooseCity" id="choose-city__moscow" data-value="Москва">
+                        <span>Москва</span> 
+                    </label>
+                </li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__novosibirsk">
+                        <input type="radio" name="chooseCity" id="choose-city__novosibirsk" data-value="Новосибирск">
+                        <span>Новосибирск</span>
+                    </label>
+                </li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__novgorod">
+                        <input type="radio" name="chooseCity" id="choose-city__novgorod" data-value="Нижный Новгород">
+                        <span>Нижный Новгород</span>
+                    </label>
+                </li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__rostov">
+                        <input type="radio" name="chooseCity" id="choose-city__rostov" data-value="Ростов-на-Дону">
+                        <span>Ростов-на-Дону</span>
+                    </label>
+                </li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__ekburg">
+                        <input type="radio" name="chooseCity" id="choose-city__ekburg" data-value="Екатиренбург">
+                        <span>Екатиренбург</span>
+                    </label>
+                </li>
+                <li class="select-dropdown__item">
+                    <label for="choose-city__krasnodar">
+                        <input type="radio" name="chooseCity" id="choose-city__krasnodar" data-value="Краснодар">
+                        <span>Краснодар</span>
+                    </label>
+                </li>
+                
+            </ul>
+        </div>
+    </div> -->
+
+    
+    <div class="box">
+        <div class="box__start">
+            <p class="question">В каком городе планируете поступать?</p>
+            <span class="step">Шаг 2/9</span>
+        </div>
+        <div class="template-box">
+            
+        </div>
+
+        <div class="box__buttons">
+            <button>Назад</button>
+            <button>Далее</button>
+        </div>
+    </div>
+    
     
     <script src="main.js"></script>
 </body>

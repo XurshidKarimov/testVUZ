@@ -1,5 +1,33 @@
+/* GENERAL STYLES */
+.box{
+    width: 512px;
+    padding: 15px;
+}
+
+.box__start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.step{
+    display: inline-block;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.box__buttons{
+    margin-top: 12px;
+}
+
+/* STEP 1 STYLE */
+
 .form__choose-for{
     min-width: 252px;
+    color: var(--main-black-color);
+    font-size: 16px;
+    line-height: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +39,7 @@
     transition: linear .1s;
 }
 
-input[type="radio"] {
+input[name="forWho"] {
     display: inline-block;
     position: relative;
     -webkit-appearance: none;
@@ -23,9 +51,9 @@ input[type="radio"] {
     height: 20px;
     border: 6px solid var(--main-black-color);
     border-radius: 50%;
-  }
+}
 
-  input[type="radio"]::before{
+input[name="forWho"]::before{
     content: "";
     position: absolute;
     display: block;
@@ -37,12 +65,134 @@ input[type="radio"] {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     scale: 0;
-  }
+}
 
-  input[type="radio"]:checked::before{
+input[type="radio"]:checked::before{
     scale: 1;
-  }
+}
 
 .checked__for__who{
     background-color: #fff;
 }
+
+/* STEP 2 STYLE */
+
+.custom-select{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--main-black-color);
+    border-radius: 16px;
+}
+
+.custom-select__select-start__city{
+    font-size: 12px;
+    line-height: 12px;
+    color: #9B9B9B;
+}
+
+.custom-select__select-start__city-name{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    color: var(--main-black-color);
+}
+
+.custom-select__svg{
+    transition: linear .2s;
+}
+
+.custom-select__svg.rotate{
+    transform: rotate(180deg);
+}
+
+.select-dropdown__wrapper{
+    margin-top: 2px;
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    transition: linear .1s;
+}
+
+.select-dropdown__wrapper.open{
+    padding: 16px 8px 0px 16px;
+    box-shadow: 0 0 20px 0 lightgray;
+    height: fit-content;
+}
+
+.select-dropdown{
+    list-style: none;
+    transition: linear .2s;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 172px;
+}
+
+.select-dropdown::-webkit-scrollbar{
+    width: 4px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb{
+    background: #D8D8D8; 
+    border-radius: 20px;
+}
+
+.select-dropdown li{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-black-color);
+}
+
+.select-dropdown__item label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: linear .1s;
+}
+
+.select-dropdown__item{
+    margin-bottom: 12px;
+}
+
+.select-dropdown__item > label span{
+    display: inline-block;
+    margin-left: 8px;
+}
+
+input[name="chooseCity"]{
+    position: relative;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--main-black-color);
+    transition: linear .1s;
+    background-color: #fff;
+}
+
+input[name="chooseCity"]:checked{
+    background-color: var(--main-black-color);
+}
+
+input[name="chooseCity"]::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../icons/checked__icon.svg') no-repeat;
+    background-position: center;
+}
+
+.select-dropdown__item.line{
+    min-height: 1px;
+    background-color: var(--main-black-color);
+}
+
+/* STEP 3 STYLE */
